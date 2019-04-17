@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JKSegmentedProgressBar_Example' do
+  pod 'JKSegmentedProgressBar', :path => '../'
+
+  target 'JKSegmentedProgressBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
