@@ -100,7 +100,7 @@ import UIKit
 
     }else{
         if self.indexPath == indexPath {
-            cell.progress = self.progress ?? 0
+            cell.progress = self.progress!
         }
     }
     
@@ -130,9 +130,9 @@ import UIKit
     
     
    public func updateProgress(indexPath:NSIndexPath,progress:CGFloat) -> Void{
+    self.reset = false
     self.indexPath = indexPath as IndexPath
     self.progress = progress
-    self.reset = false
         UIView.performWithoutAnimation {
             self.collectionView.reloadItems(at: [indexPath as IndexPath])
         }

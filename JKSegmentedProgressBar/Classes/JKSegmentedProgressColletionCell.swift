@@ -13,16 +13,13 @@ class JKSegmentedProgressColletionCell: UICollectionViewCell {
     public var progress:CGFloat{
         set{
           _progress = newValue
+            self.progressView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width * newValue, height: self.bounds.height)
         }
         get{
             return _progress
         }
     }
     
-    override func layoutSubviews() {
-     self.backgroundColor = .clear
-     self.progressView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width * self.progress, height: self.bounds.height)
-    }
     
     func updateView(withModel model:NSDictionary) -> Void {
         let bgColor:UIColor = model.object(forKey: "bgColor") as! UIColor
