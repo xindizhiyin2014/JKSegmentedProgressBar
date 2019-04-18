@@ -13,14 +13,11 @@ import UIKit
     var _itemCount:NSInteger = 1
    public var itemCount:NSInteger{
         set{
-            if _itemCount != newValue {
                 _itemCount = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
                 self.reset = true
                 self.collectionView.reloadData()
-            }
-        
-        }
+           }
         
         get{
             return _itemCount
@@ -31,12 +28,10 @@ import UIKit
     var _itemForgroundColor:UIColor = .white
    public var itemForgroundColor:UIColor{
         set{
-            if _itemForgroundColor != newValue {
                 _itemForgroundColor = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
                 self.reset = true
                 self.collectionView.reloadData()
-            }
            
         }
         get{
@@ -47,12 +42,10 @@ import UIKit
     var _itemBgColor:UIColor = UIColor.white.withAlphaComponent(0.3)
    public var itemBgColor:UIColor{
         set{
-            if _itemBgColor != newValue {
                 _itemBgColor = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
                 self.reset = true
                 self.collectionView.reloadData()
-            }
         }
         get{
          return _itemBgColor
@@ -61,11 +54,9 @@ import UIKit
     var _itemSpace:CGFloat = 2
    public var itemSpace:CGFloat{
         set{
-            if _itemSpace != newValue {
                 _itemSpace = newValue
                 self.reset = true
                 self.collectionView.reloadData()
-            }
         }
         
         get{
