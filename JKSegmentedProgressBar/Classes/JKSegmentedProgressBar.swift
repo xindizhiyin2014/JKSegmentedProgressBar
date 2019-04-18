@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class JKSegmentedProgressBar: UIView,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate {
+@objcMembers open class JKSegmentedProgressBar: UIView,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate {
     
     var _itemCount:NSInteger = 1
    public var itemCount:NSInteger{
