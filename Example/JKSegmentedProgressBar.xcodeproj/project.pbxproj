@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		03DAE476FA920036332A235C /* Pods-JKSegmentedProgressBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKSegmentedProgressBar_Example.debug.xcconfig"; path = "Target Support Files/Pods-JKSegmentedProgressBar_Example/Pods-JKSegmentedProgressBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		142C5B677402E0B102BA43BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		142C5B677402E0B102BA43BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5F8129B102C95E5D0E348578 /* Pods-JKSegmentedProgressBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKSegmentedProgressBar_Tests.release.xcconfig"; path = "Target Support Files/Pods-JKSegmentedProgressBar_Tests/Pods-JKSegmentedProgressBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JKSegmentedProgressBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKSegmentedProgressBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,11 +41,11 @@
 		607FACE51AFB9204008FA782 /* JKSegmentedProgressBar_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKSegmentedProgressBar_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		78535E4BDC6EEE52C16DF2F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		78535E4BDC6EEE52C16DF2F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		88F11DEF00F67566EBBBD6EE /* Pods-JKSegmentedProgressBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKSegmentedProgressBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JKSegmentedProgressBar_Tests/Pods-JKSegmentedProgressBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		97E3B25AE9634FF2441F82AC /* Pods-JKSegmentedProgressBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKSegmentedProgressBar_Example.release.xcconfig"; path = "Target Support Files/Pods-JKSegmentedProgressBar_Example/Pods-JKSegmentedProgressBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9C54D0F16B55B9117E4EC84F /* Pods_JKSegmentedProgressBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKSegmentedProgressBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCFA1916480183B4D0ADA1F9 /* JKSegmentedProgressBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKSegmentedProgressBar.podspec; path = ../JKSegmentedProgressBar.podspec; sourceTree = "<group>"; };
+		CCFA1916480183B4D0ADA1F9 /* JKSegmentedProgressBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKSegmentedProgressBar.podspec; path = ../JKSegmentedProgressBar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FBB870E25B192CCBA2723AD9 /* Pods_JKSegmentedProgressBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKSegmentedProgressBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				88F11DEF00F67566EBBBD6EE /* Pods-JKSegmentedProgressBar_Tests.debug.xcconfig */,
 				5F8129B102C95E5D0E348578 /* Pods-JKSegmentedProgressBar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -1,0 +1,16 @@
+PODS:
+  - JKSegmentedProgressBar (0.1.0)
+
+DEPENDENCIES:
+  - JKSegmentedProgressBar (from `../`)
+
+EXTERNAL SOURCES:
+  JKSegmentedProgressBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JKSegmentedProgressBar: 85875a5883ee39ebb7886e1cc2398890dd567b1a
+
+PODFILE CHECKSUM: b77bb475743692028fcec88490055f5362e916a2
+
+COCOAPODS: 1.6.1

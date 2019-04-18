@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FF907E31744FDC6652B218CEEB62CB /* Pods-JKSegmentedProgressBar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1762602761403CBF1E77EAC71453275D /* Pods-JKSegmentedProgressBar_Example-dummy.m */; };
+		4624BE268FC78669F28690FEE43B15B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		4CC0D0A6230222046790A4A8961B8CF3 /* JKSegmentedProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C96113E3328F0BFE83DA2528914A8DA1 /* JKSegmentedProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638B5B653D95FE0EA4507A05761CC5BF /* JKSegmentedProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFE17219B5E65FD7FFB34EE88A10778 /* JKSegmentedProgressBar-dummy.m */; };
+		6F6DC297361BE48ED1698B8734E8EEAA /* JKSegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F828F7785115BFBB661A68BC1006FB04 /* JKSegmentedProgressBar.swift */; };
+		A0156ABD0D711A9EBBE9A54845227988 /* JKSegmentedProgressColletionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497FF10A50581795C216EFBDDC741AA /* JKSegmentedProgressColletionCell.swift */; };
+		B07ECD2EA3EBFA0C05F421CA588D9913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		B2A59031279426A2E64E97C7AE4E24F7 /* Pods-JKSegmentedProgressBar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F5BC1180923E8E198EB65F6B3E091 /* Pods-JKSegmentedProgressBar_Tests-dummy.m */; };
+		B924FAFB95E97768BF527A313AEF99E2 /* Pods-JKSegmentedProgressBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54B88223D7F120F147865EF580446BDC /* Pods-JKSegmentedProgressBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D33BD4916F05D77BF9289BD3B521E43E /* Pods-JKSegmentedProgressBar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFF23482967249953490A69CE5E345C /* Pods-JKSegmentedProgressBar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6C04F20653352EEBFDACADD4CC07EF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F4F66E306EB03D4963489139CA8393B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD84748A6EBBD9A9A055EFF791AAE26E;
+			remoteInfo = JKSegmentedProgressBar;
+		};
+		A22B096B5EA7D2FC7E53ACEF434DA283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B470EEBAC3FF1F21C9CD094370895D4;
+			remoteInfo = "Pods-JKSegmentedProgressBar_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080B617B59D9E771ACBDC297C24A1E89 /* Pods-JKSegmentedProgressBar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKSegmentedProgressBar_Example.modulemap"; sourceTree = "<group>"; };
+		1762602761403CBF1E77EAC71453275D /* Pods-JKSegmentedProgressBar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKSegmentedProgressBar_Example-dummy.m"; sourceTree = "<group>"; };
+		28685850033D77D519979208A22ADF1F /* Pods-JKSegmentedProgressBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKSegmentedProgressBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3497FF10A50581795C216EFBDDC741AA /* JKSegmentedProgressColletionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKSegmentedProgressColletionCell.swift; path = JKSegmentedProgressBar/Classes/JKSegmentedProgressColletionCell.swift; sourceTree = "<group>"; };
+		361A5C1D22364F20D9FA7C735703515F /* Pods_JKSegmentedProgressBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKSegmentedProgressBar_Example.framework; path = "Pods-JKSegmentedProgressBar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B71CDFC59C96ACCE65093B544A5BCC9 /* Pods_JKSegmentedProgressBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKSegmentedProgressBar_Tests.framework; path = "Pods-JKSegmentedProgressBar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D09FE27EFE354E43BD448DF2868F39B /* JKSegmentedProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKSegmentedProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		44C880A6E1BCF04DA7B6BCD0BAFF41E1 /* Pods-JKSegmentedProgressBar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKSegmentedProgressBar_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4678621C97995E5CC7D94C3B6F7EC5BA /* JKSegmentedProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKSegmentedProgressBar.framework; path = JKSegmentedProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B88223D7F120F147865EF580446BDC /* Pods-JKSegmentedProgressBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKSegmentedProgressBar_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5A478BB62117ADDEB656FE99AF500916 /* JKSegmentedProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKSegmentedProgressBar.modulemap; sourceTree = "<group>"; };
+		5FDFDBE9EBA231464BF3B47BB5916ACD /* Pods-JKSegmentedProgressBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKSegmentedProgressBar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6D14ACB34843E4B31C2C668A503D028D /* Pods-JKSegmentedProgressBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKSegmentedProgressBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6E8F5BC1180923E8E198EB65F6B3E091 /* Pods-JKSegmentedProgressBar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKSegmentedProgressBar_Tests-dummy.m"; sourceTree = "<group>"; };
+		7A5D8658E8192DBFEB7B3070816FDDEE /* Pods-JKSegmentedProgressBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKSegmentedProgressBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E00D416B5C27FB00382AD700E0F1DF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8EE95F32C2E5634BE63F671E1A9FCC14 /* Pods-JKSegmentedProgressBar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKSegmentedProgressBar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8F0FAA4C17552CB1E59D6F121FE8B7DE /* Pods-JKSegmentedProgressBar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKSegmentedProgressBar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		941AAAA779AC64CC1F57BAA557844FCB /* JKSegmentedProgressBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JKSegmentedProgressBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		974840FA52D4875B31428CF1FC6578F9 /* Pods-JKSegmentedProgressBar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKSegmentedProgressBar_Tests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DC0687ECE007F0A865C28000111EB8A /* Pods-JKSegmentedProgressBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKSegmentedProgressBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAD7BFA87B18D0832D5187E1E3E5145B /* Pods-JKSegmentedProgressBar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKSegmentedProgressBar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BFC062BA1DAE451767DDAAB6FC40E713 /* JKSegmentedProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JKSegmentedProgressBar-Info.plist"; sourceTree = "<group>"; };
+		C3CE59F62FE9CE75AEEC33FF1ED457E5 /* Pods-JKSegmentedProgressBar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKSegmentedProgressBar_Example-Info.plist"; sourceTree = "<group>"; };
+		C96113E3328F0BFE83DA2528914A8DA1 /* JKSegmentedProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKSegmentedProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEF37BAB94A71F75B8358F63469B04F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D1FE4470990A75ADD28D5EA63A7780C1 /* JKSegmentedProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKSegmentedProgressBar.xcconfig; sourceTree = "<group>"; };
+		DBFE17219B5E65FD7FFB34EE88A10778 /* JKSegmentedProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKSegmentedProgressBar-dummy.m"; sourceTree = "<group>"; };
+		F828F7785115BFBB661A68BC1006FB04 /* JKSegmentedProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKSegmentedProgressBar.swift; path = JKSegmentedProgressBar/Classes/JKSegmentedProgressBar.swift; sourceTree = "<group>"; };
+		FAFF23482967249953490A69CE5E345C /* Pods-JKSegmentedProgressBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKSegmentedProgressBar_Example-umbrella.h"; sourceTree = "<group>"; };
+		FD7EF543E49531F9513FD13350009DA7 /* Pods-JKSegmentedProgressBar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKSegmentedProgressBar_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		582A58FE00B834BBB22721F72C6758D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07ECD2EA3EBFA0C05F421CA588D9913 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C499018BFB2B7A9963C7DA22A1D6D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4624BE268FC78669F28690FEE43B15B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9BEACD282691F2B6ED374579C26AA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C04F20653352EEBFDACADD4CC07EF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05CE8DEA1B806C8443DC22C3F8103C01 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9125D04D0D27A102015A116B1723C59 /* JKSegmentedProgressBar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4549B8DC6DB16DB0A90C53076EE66BB8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78775F8EFF966FB8F9E0D102EFDEA15D /* Pods-JKSegmentedProgressBar_Example */,
+				B1FD1890CC3B903678D970E7289433B3 /* Pods-JKSegmentedProgressBar_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		78775F8EFF966FB8F9E0D102EFDEA15D /* Pods-JKSegmentedProgressBar_Example */ = {
+			isa = PBXGroup;
+			children = (
+				080B617B59D9E771ACBDC297C24A1E89 /* Pods-JKSegmentedProgressBar_Example.modulemap */,
+				7A5D8658E8192DBFEB7B3070816FDDEE /* Pods-JKSegmentedProgressBar_Example-acknowledgements.markdown */,
+				AAD7BFA87B18D0832D5187E1E3E5145B /* Pods-JKSegmentedProgressBar_Example-acknowledgements.plist */,
+				1762602761403CBF1E77EAC71453275D /* Pods-JKSegmentedProgressBar_Example-dummy.m */,
+				44C880A6E1BCF04DA7B6BCD0BAFF41E1 /* Pods-JKSegmentedProgressBar_Example-frameworks.sh */,
+				C3CE59F62FE9CE75AEEC33FF1ED457E5 /* Pods-JKSegmentedProgressBar_Example-Info.plist */,
+				FAFF23482967249953490A69CE5E345C /* Pods-JKSegmentedProgressBar_Example-umbrella.h */,
+				6D14ACB34843E4B31C2C668A503D028D /* Pods-JKSegmentedProgressBar_Example.debug.xcconfig */,
+				5FDFDBE9EBA231464BF3B47BB5916ACD /* Pods-JKSegmentedProgressBar_Example.release.xcconfig */,
+			);
+			name = "Pods-JKSegmentedProgressBar_Example";
+			path = "Target Support Files/Pods-JKSegmentedProgressBar_Example";
+			sourceTree = "<group>";
+		};
+		896B6B130C12640CD46A49CB79063894 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				941AAAA779AC64CC1F57BAA557844FCB /* JKSegmentedProgressBar.podspec */,
+				CEF37BAB94A71F75B8358F63469B04F0 /* LICENSE */,
+				7E00D416B5C27FB00382AD700E0F1DF0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		90F1EF9BBC45F601AAC1EF35F3E332DA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A478BB62117ADDEB656FE99AF500916 /* JKSegmentedProgressBar.modulemap */,
+				D1FE4470990A75ADD28D5EA63A7780C1 /* JKSegmentedProgressBar.xcconfig */,
+				DBFE17219B5E65FD7FFB34EE88A10778 /* JKSegmentedProgressBar-dummy.m */,
+				BFC062BA1DAE451767DDAAB6FC40E713 /* JKSegmentedProgressBar-Info.plist */,
+				3D09FE27EFE354E43BD448DF2868F39B /* JKSegmentedProgressBar-prefix.pch */,
+				C96113E3328F0BFE83DA2528914A8DA1 /* JKSegmentedProgressBar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JKSegmentedProgressBar";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B1FD1890CC3B903678D970E7289433B3 /* Pods-JKSegmentedProgressBar_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FD7EF543E49531F9513FD13350009DA7 /* Pods-JKSegmentedProgressBar_Tests.modulemap */,
+				8EE95F32C2E5634BE63F671E1A9FCC14 /* Pods-JKSegmentedProgressBar_Tests-acknowledgements.markdown */,
+				8F0FAA4C17552CB1E59D6F121FE8B7DE /* Pods-JKSegmentedProgressBar_Tests-acknowledgements.plist */,
+				6E8F5BC1180923E8E198EB65F6B3E091 /* Pods-JKSegmentedProgressBar_Tests-dummy.m */,
+				974840FA52D4875B31428CF1FC6578F9 /* Pods-JKSegmentedProgressBar_Tests-Info.plist */,
+				54B88223D7F120F147865EF580446BDC /* Pods-JKSegmentedProgressBar_Tests-umbrella.h */,
+				9DC0687ECE007F0A865C28000111EB8A /* Pods-JKSegmentedProgressBar_Tests.debug.xcconfig */,
+				28685850033D77D519979208A22ADF1F /* Pods-JKSegmentedProgressBar_Tests.release.xcconfig */,
+			);
+			name = "Pods-JKSegmentedProgressBar_Tests";
+			path = "Target Support Files/Pods-JKSegmentedProgressBar_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				05CE8DEA1B806C8443DC22C3F8103C01 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DF80A40CDA1DD2690941DDB87A1AE0D2 /* Products */,
+				4549B8DC6DB16DB0A90C53076EE66BB8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9125D04D0D27A102015A116B1723C59 /* JKSegmentedProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				F828F7785115BFBB661A68BC1006FB04 /* JKSegmentedProgressBar.swift */,
+				3497FF10A50581795C216EFBDDC741AA /* JKSegmentedProgressColletionCell.swift */,
+				896B6B130C12640CD46A49CB79063894 /* Pod */,
+				90F1EF9BBC45F601AAC1EF35F3E332DA /* Support Files */,
+			);
+			name = JKSegmentedProgressBar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DF80A40CDA1DD2690941DDB87A1AE0D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4678621C97995E5CC7D94C3B6F7EC5BA /* JKSegmentedProgressBar.framework */,
+				361A5C1D22364F20D9FA7C735703515F /* Pods_JKSegmentedProgressBar_Example.framework */,
+				3B71CDFC59C96ACCE65093B544A5BCC9 /* Pods_JKSegmentedProgressBar_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53B61E2C6A03FE3346D9062606439C58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B924FAFB95E97768BF527A313AEF99E2 /* Pods-JKSegmentedProgressBar_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD345E586C807F3CB41C8BCD05880F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33BD4916F05D77BF9289BD3B521E43E /* Pods-JKSegmentedProgressBar_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C88CB7DA65FC5D494E38220D8DA6DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC0D0A6230222046790A4A8961B8CF3 /* JKSegmentedProgressBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B470EEBAC3FF1F21C9CD094370895D4 /* Pods-JKSegmentedProgressBar_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0DA12CCD8703CC29D75FDB44B9DA6D2 /* Build configuration list for PBXNativeTarget "Pods-JKSegmentedProgressBar_Example" */;
+			buildPhases = (
+				6FD345E586C807F3CB41C8BCD05880F8 /* Headers */,
+				EAD0DCC157F609434DD8F054CFE82148 /* Sources */,
+				D9BEACD282691F2B6ED374579C26AA0B /* Frameworks */,
+				267A0FBF2A24313DC2C64205FC5BBECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9231F253F5DC99AC6715BDC4F36042B /* PBXTargetDependency */,
+			);
+			name = "Pods-JKSegmentedProgressBar_Example";
+			productName = "Pods-JKSegmentedProgressBar_Example";
+			productReference = 361A5C1D22364F20D9FA7C735703515F /* Pods_JKSegmentedProgressBar_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32E01884B0D2ED6B689492259147D52B /* Pods-JKSegmentedProgressBar_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623795BF2503302CF652679FA192725 /* Build configuration list for PBXNativeTarget "Pods-JKSegmentedProgressBar_Tests" */;
+			buildPhases = (
+				53B61E2C6A03FE3346D9062606439C58 /* Headers */,
+				41B0FF72FB14B250E1A8BA55D8D1F805 /* Sources */,
+				D1C499018BFB2B7A9963C7DA22A1D6D2 /* Frameworks */,
+				13A32D7EA82179718B6519343D536DF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D81C6F7E5DEDCF5F4B814C843BD78C /* PBXTargetDependency */,
+			);
+			name = "Pods-JKSegmentedProgressBar_Tests";
+			productName = "Pods-JKSegmentedProgressBar_Tests";
+			productReference = 3B71CDFC59C96ACCE65093B544A5BCC9 /* Pods_JKSegmentedProgressBar_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD84748A6EBBD9A9A055EFF791AAE26E /* JKSegmentedProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6FD8F44DFE66E9C2163A6D8416C342 /* Build configuration list for PBXNativeTarget "JKSegmentedProgressBar" */;
+			buildPhases = (
+				E4C88CB7DA65FC5D494E38220D8DA6DA /* Headers */,
+				6B87348B5E5DB5D342777593D75B0347 /* Sources */,
+				582A58FE00B834BBB22721F72C6758D9 /* Frameworks */,
+				AF370E51AE5382867A6DC0955970D331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKSegmentedProgressBar;
+			productName = JKSegmentedProgressBar;
+			productReference = 4678621C97995E5CC7D94C3B6F7EC5BA /* JKSegmentedProgressBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = DF80A40CDA1DD2690941DDB87A1AE0D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD84748A6EBBD9A9A055EFF791AAE26E /* JKSegmentedProgressBar */,
+				0B470EEBAC3FF1F21C9CD094370895D4 /* Pods-JKSegmentedProgressBar_Example */,
+				32E01884B0D2ED6B689492259147D52B /* Pods-JKSegmentedProgressBar_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13A32D7EA82179718B6519343D536DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267A0FBF2A24313DC2C64205FC5BBECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF370E51AE5382867A6DC0955970D331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41B0FF72FB14B250E1A8BA55D8D1F805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A59031279426A2E64E97C7AE4E24F7 /* Pods-JKSegmentedProgressBar_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B87348B5E5DB5D342777593D75B0347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638B5B653D95FE0EA4507A05761CC5BF /* JKSegmentedProgressBar-dummy.m in Sources */,
+				6F6DC297361BE48ED1698B8734E8EEAA /* JKSegmentedProgressBar.swift in Sources */,
+				A0156ABD0D711A9EBBE9A54845227988 /* JKSegmentedProgressColletionCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD0DCC157F609434DD8F054CFE82148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FF907E31744FDC6652B218CEEB62CB /* Pods-JKSegmentedProgressBar_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9231F253F5DC99AC6715BDC4F36042B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JKSegmentedProgressBar;
+			target = FD84748A6EBBD9A9A055EFF791AAE26E /* JKSegmentedProgressBar */;
+			targetProxy = 0F4F66E306EB03D4963489139CA8393B /* PBXContainerItemProxy */;
+		};
+		F5D81C6F7E5DEDCF5F4B814C843BD78C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKSegmentedProgressBar_Example";
+			target = 0B470EEBAC3FF1F21C9CD094370895D4 /* Pods-JKSegmentedProgressBar_Example */;
+			targetProxy = A22B096B5EA7D2FC7E53ACEF434DA283 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AE79804C2B95975316B3110D8495FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1FE4470990A75ADD28D5EA63A7780C1 /* JKSegmentedProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = JKSegmentedProgressBar;
+				PRODUCT_NAME = JKSegmentedProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC6939C7EE149E9C4495F628EA0A6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDFDBE9EBA231464BF3B47BB5916ACD /* Pods-JKSegmentedProgressBar_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Example/Pods-JKSegmentedProgressBar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Example/Pods-JKSegmentedProgressBar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8705FDE599BD7ADB618A9E49A594D596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC0687ECE007F0A865C28000111EB8A /* Pods-JKSegmentedProgressBar_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Tests/Pods-JKSegmentedProgressBar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Tests/Pods-JKSegmentedProgressBar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AA942F6DFACA1C7A65F3EF477FBF1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1FE4470990A75ADD28D5EA63A7780C1 /* JKSegmentedProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = JKSegmentedProgressBar;
+				PRODUCT_NAME = JKSegmentedProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA09E23794F2B2E7AF911B2FD38334B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28685850033D77D519979208A22ADF1F /* Pods-JKSegmentedProgressBar_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Tests/Pods-JKSegmentedProgressBar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Tests/Pods-JKSegmentedProgressBar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EBB1CB41E1C22060842DB1187D779C90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D14ACB34843E4B31C2C668A503D028D /* Pods-JKSegmentedProgressBar_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Example/Pods-JKSegmentedProgressBar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKSegmentedProgressBar_Example/Pods-JKSegmentedProgressBar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3623795BF2503302CF652679FA192725 /* Build configuration list for PBXNativeTarget "Pods-JKSegmentedProgressBar_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8705FDE599BD7ADB618A9E49A594D596 /* Debug */,
+				AA09E23794F2B2E7AF911B2FD38334B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6FD8F44DFE66E9C2163A6D8416C342 /* Build configuration list for PBXNativeTarget "JKSegmentedProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA942F6DFACA1C7A65F3EF477FBF1B5 /* Debug */,
+				3AE79804C2B95975316B3110D8495FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0DA12CCD8703CC29D75FDB44B9DA6D2 /* Build configuration list for PBXNativeTarget "Pods-JKSegmentedProgressBar_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB1CB41E1C22060842DB1187D779C90 /* Debug */,
+				4BC6939C7EE149E9C4495F628EA0A6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

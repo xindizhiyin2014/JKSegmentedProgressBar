@@ -1,0 +1,6 @@
+framework module JKSegmentedProgressBar {
+  umbrella header "JKSegmentedProgressBar-umbrella.h"
+
+  export *
+  module * { export * }
+}
