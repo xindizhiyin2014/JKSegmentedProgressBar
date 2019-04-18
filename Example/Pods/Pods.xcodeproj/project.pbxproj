@@ -407,7 +407,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3AE79804C2B95975316B3110D8495FB4 /* Release */ = {
+		3971A02BFAB0E7946CD066CE05DBFD12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D1FE4470990A75ADD28D5EA63A7780C1 /* JKSegmentedProgressBar.xcconfig */;
 			buildSettings = {
@@ -431,13 +431,44 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		3CD1515D62B411272F44B2CC1097E7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1FE4470990A75ADD28D5EA63A7780C1 /* JKSegmentedProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = JKSegmentedProgressBar;
+				PRODUCT_NAME = JKSegmentedProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		4BC6939C7EE149E9C4495F628EA0A6A2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -500,37 +531,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9AA942F6DFACA1C7A65F3EF477FBF1B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1FE4470990A75ADD28D5EA63A7780C1 /* JKSegmentedProgressBar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JKSegmentedProgressBar/JKSegmentedProgressBar.modulemap";
-				PRODUCT_MODULE_NAME = JKSegmentedProgressBar;
-				PRODUCT_NAME = JKSegmentedProgressBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -752,8 +752,8 @@
 		DD6FD8F44DFE66E9C2163A6D8416C342 /* Build configuration list for PBXNativeTarget "JKSegmentedProgressBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9AA942F6DFACA1C7A65F3EF477FBF1B5 /* Debug */,
-				3AE79804C2B95975316B3110D8495FB4 /* Release */,
+				3CD1515D62B411272F44B2CC1097E7B9 /* Debug */,
+				3971A02BFAB0E7946CD066CE05DBFD12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

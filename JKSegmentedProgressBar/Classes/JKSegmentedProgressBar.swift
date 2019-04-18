@@ -8,14 +8,15 @@
 import Foundation
 import UIKit
 
-class JKSegmentedProgressBar: UIView,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+open class JKSegmentedProgressBar: UIView,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate {
     
     var _itemCount:NSInteger = 1
-    var itemCount:NSInteger{
+   public var itemCount:NSInteger{
         set{
             if _itemCount != newValue {
                 _itemCount = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                self.collectionView.reloadData()
             }
         
         }
@@ -27,11 +28,12 @@ class JKSegmentedProgressBar: UIView,UICollectionViewDataSource,UICollectionView
     }
     
     var _itemForgroundColor:UIColor = .white
-    var itemForgroundColor:UIColor{
+   public var itemForgroundColor:UIColor{
         set{
             if _itemForgroundColor != newValue {
                 _itemForgroundColor = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                self.collectionView.reloadData()
             }
            
         }
@@ -41,73 +43,98 @@ class JKSegmentedProgressBar: UIView,UICollectionViewDataSource,UICollectionView
     }
     
     var _itemBgColor:UIColor = UIColor.white.withAlphaComponent(0.3)
-    var itemBgColor:UIColor{
+   public var itemBgColor:UIColor{
         set{
             if _itemBgColor != newValue {
                 _itemBgColor = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                self.collectionView.reloadData()
             }
         }
         get{
          return _itemBgColor
         }
     }
-    var itemSpace:CGFloat = 2
+    var _itemSpace:CGFloat = 2
+   public var itemSpace:CGFloat{
+        set{
+            if _itemSpace != newValue {
+                _itemSpace = newValue
+                self.collectionView.reloadData()
+            }
+        }
+        
+        get{
+          return _itemSpace
+        }
+    }
+    
+    var progress:CGFloat?
+    var indexPath:IndexPath?
+    
+    
+    
     var itemConfig:NSDictionary
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         itemConfig = ["color":_itemForgroundColor,"bgColor":_itemBgColor]
         super.init(frame: frame)
+        self.backgroundColor = .clear
+        self.collectionView .reloadData()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func layoutSubviews() {
+
+    override open func layoutSubviews() {
         self.collectionView.frame = self.bounds;
     }
+    
     //    MARK: - - - - UICollectionViewDataSource - - - -
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+   public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       return self.itemCount
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+   public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:JKSegmentedProgressColletionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "JKSegmentedProgressColletionCellID", for: indexPath) as! JKSegmentedProgressColletionCell
         cell.updateView(withModel: itemConfig)
-        return cell
+    if self.indexPath == indexPath {
+        cell.progress = self.progress ?? 0
+    }
+    return cell
     }
     
     
     //    MARK: - - - - UICollectionViewDelegateFlowLayout - - - -
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+   public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let width = (self.bounds.width - CGFloat(self.itemCount - 1) * self.itemSpace)/CGFloat(self.itemCount)
         return CGSize.init(width: width, height: self.bounds.height)
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+   public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: 1, left: 1, bottom: 1, right: 1)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
+   public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
+        return self.itemSpace
+    }
+    
+    
+   public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat{
         return 0
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat{
-        return self.itemSpace
-    }
-    
-    public  func updateProgress(indexPath:IndexPath,progress:CGFloat) -> Void{
-        let cell:JKSegmentedProgressColletionCell = self.collectionView.cellForItem(at: indexPath) as! JKSegmentedProgressColletionCell
-        cell.progress = progress
+   public func updateProgress(indexPath:NSIndexPath,progress:CGFloat) -> Void{
+    self.indexPath = indexPath as IndexPath
+    self.progress = progress
         UIView.performWithoutAnimation {
-         self.collectionView.reloadItems(at: [indexPath])
+            self.collectionView.reloadItems(at: [indexPath as IndexPath])
         }
-        
+    
     }
 
-    
 
     private lazy var collectionView:UICollectionView = {
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
@@ -116,9 +143,11 @@ class JKSegmentedProgressBar: UIView,UICollectionViewDataSource,UICollectionView
         tmpCollectionView.register(JKSegmentedProgressColletionCell.self, forCellWithReuseIdentifier: "JKSegmentedProgressColletionCellID")
         tmpCollectionView.dataSource = self
         tmpCollectionView.delegate = self
+        tmpCollectionView.showsHorizontalScrollIndicator = false
         tmpCollectionView.allowsSelection = false
         tmpCollectionView.isScrollEnabled = false
         tmpCollectionView.bounces = false
+        tmpCollectionView.backgroundColor = .clear
         self.addSubview(tmpCollectionView)
         return tmpCollectionView
     }()

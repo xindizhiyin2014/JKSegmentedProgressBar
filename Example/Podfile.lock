@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JKSegmentedProgressBar: 85875a5883ee39ebb7886e1cc2398890dd567b1a
+  JKSegmentedProgressBar: c7b762ba55c1dabb04d9a7ab5cd8e0c4cf7fb0e9
 
 PODFILE CHECKSUM: b77bb475743692028fcec88490055f5362e916a2
 

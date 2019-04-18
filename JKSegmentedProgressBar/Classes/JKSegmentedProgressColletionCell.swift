@@ -20,7 +20,8 @@ class JKSegmentedProgressColletionCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        self.progressView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width * self.progress, height: self.bounds.height)
+     self.backgroundColor = .clear
+     self.progressView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width * self.progress, height: self.bounds.height)
     }
     
     func updateView(withModel model:NSDictionary) -> Void {
