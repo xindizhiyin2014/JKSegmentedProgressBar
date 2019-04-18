@@ -16,6 +16,7 @@ import UIKit
             if _itemCount != newValue {
                 _itemCount = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                self.reset = true
                 self.collectionView.reloadData()
             }
         
@@ -33,6 +34,7 @@ import UIKit
             if _itemForgroundColor != newValue {
                 _itemForgroundColor = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                self.reset = true
                 self.collectionView.reloadData()
             }
            
@@ -48,6 +50,7 @@ import UIKit
             if _itemBgColor != newValue {
                 _itemBgColor = newValue
                 itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                self.reset = true
                 self.collectionView.reloadData()
             }
         }
@@ -60,6 +63,7 @@ import UIKit
         set{
             if _itemSpace != newValue {
                 _itemSpace = newValue
+                self.reset = true
                 self.collectionView.reloadData()
             }
         }
@@ -71,6 +75,8 @@ import UIKit
     
     var progress:CGFloat?
     var indexPath:IndexPath?
+    var reset:Bool = false
+    
     
     
     
@@ -97,10 +103,16 @@ import UIKit
     
    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:JKSegmentedProgressColletionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "JKSegmentedProgressColletionCellID", for: indexPath) as! JKSegmentedProgressColletionCell
-        cell.updateView(withModel: itemConfig)
-    if self.indexPath == indexPath {
-        cell.progress = self.progress ?? 0
+    if self.reset == true {
+      cell.progress = 0
+      cell.updateView(withModel: itemConfig)
+
+    }else{
+        if self.indexPath == indexPath {
+            cell.progress = self.progress ?? 0
+        }
     }
+    
     return cell
     }
     
@@ -129,6 +141,7 @@ import UIKit
    public func updateProgress(indexPath:NSIndexPath,progress:CGFloat) -> Void{
     self.indexPath = indexPath as IndexPath
     self.progress = progress
+    self.reset = false
         UIView.performWithoutAnimation {
             self.collectionView.reloadItems(at: [indexPath as IndexPath])
         }
