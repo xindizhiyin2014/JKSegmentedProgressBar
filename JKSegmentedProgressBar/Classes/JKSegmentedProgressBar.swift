@@ -101,6 +101,10 @@ import UIKit
     }else{
         if self.indexPath == indexPath {
             cell.progress = self.progress!
+        }else if indexPath.item < self.indexPath!.item{
+            cell.progress = 1
+        }else{
+            cell.progress = 0
         }
     }
     
@@ -133,9 +137,10 @@ import UIKit
     self.reset = false
     self.indexPath = indexPath as IndexPath
     self.progress = progress
-        UIView.performWithoutAnimation {
-            self.collectionView.reloadItems(at: [indexPath as IndexPath])
-        }
+    UIView.performWithoutAnimation {
+        self.collectionView.reloadData()
+        // MARK:when use self.collectionView.reloadItems(at: [indexPath as IndexPath]) this code ,the first cell will disappear
+    }
     
     }
 
