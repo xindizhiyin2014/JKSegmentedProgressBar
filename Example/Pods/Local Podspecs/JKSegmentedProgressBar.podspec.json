@@ -1,6 +1,6 @@
 {
   "name": "JKSegmentedProgressBar",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "summary": "this is a segmented progress bar,it will update with the need",
   "description": "this is a segmented progress bar,it will update with the need,it write with swift",
   "homepage": "https://github.com/xindizhiyin2014/JKSegmentedProgressBar",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/xindizhiyin2014/JKSegmentedProgressBar.git",
-    "tag": "0.1.0"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"

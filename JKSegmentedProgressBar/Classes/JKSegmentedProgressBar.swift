@@ -100,7 +100,7 @@ import UIKit
 
     }else{
         if self.indexPath == indexPath {
-            cell.progress = self.progress!
+            cell.progress = self.progress ?? 0
         }else if indexPath.item < self.indexPath!.item{
             cell.progress = 1
         }else{
@@ -120,7 +120,7 @@ import UIKit
     
     
    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.init(top: 1, left: 1, bottom: 1, right: 1)
+        return UIEdgeInsets.zero
     }
     
    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
