@@ -12,8 +12,11 @@ class JKSegmentedProgressColletionCell: UICollectionViewCell {
     var _progress:CGFloat = 0
     public var progress:CGFloat{
         set{
-          _progress = newValue
-            self.progressView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width * newValue, height: self.bounds.height)
+            if newValue.isNaN == false {
+                _progress = newValue
+                self.progressView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width * newValue, height: self.bounds.height)
+            }
+          
         }
         get{
             return _progress

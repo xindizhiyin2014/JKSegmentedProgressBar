@@ -1,5 +1,5 @@
 PODS:
-  - JKSegmentedProgressBar (0.1.6)
+  - JKSegmentedProgressBar (0.1.7)
 
 DEPENDENCIES:
   - JKSegmentedProgressBar (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JKSegmentedProgressBar: 96b2ddc004e0a55f12acc409158726dd9e8f0622
+  JKSegmentedProgressBar: 98e2c768645395764f759a98f0ee1fb5abebdae7
 
 PODFILE CHECKSUM: b77bb475743692028fcec88490055f5362e916a2
 
