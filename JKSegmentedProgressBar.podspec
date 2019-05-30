@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKSegmentedProgressBar'
-  s.version          = '0.1.8'
+  s.version          = '0.1.8.1'
   s.summary          = 'this is a segmented progress bar,it will update with the need'
 
 # This description is used to generate tags and improve search results.
