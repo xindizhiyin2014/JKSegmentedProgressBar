@@ -23,11 +23,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = .green
         self.automaticallyAdjustsScrollViewInsets = false
-        let segmentedProgressBar:JKSegmentedProgressBar = JKSegmentedProgressBar.init(frame:CGRect.init(x: 0, y: 100, width: self.view.frame.width, height: 50))
+        let segmentedProgressBar:JKSegmentedProgressBar = JKSegmentedProgressBar.init(frame:CGRect.init(x: 0, y: 300, width: UIScreen.main.bounds.width, height: 20))
         self.view.addSubview(segmentedProgressBar)
         segmentedProgressBar.itemCount = 3
         segmentedProgressBar.itemSpace = 10
+        segmentedProgressBar.itemForgroundColor = .red
+        segmentedProgressBar.itemCornerRadius = 10
         segmentedProgressBar.updateProgress(indexPath: NSIndexPath.init(row: 1, section: 0) as NSIndexPath, progress: 0.5)
+        
         
     }
     

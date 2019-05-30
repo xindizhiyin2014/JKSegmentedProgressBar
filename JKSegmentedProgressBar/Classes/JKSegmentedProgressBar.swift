@@ -14,7 +14,6 @@ import UIKit
    public var itemCount:NSInteger{
         set{
                 _itemCount = newValue
-                itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
                 self.reset = true
                 self.collectionView.reloadData()
            }
@@ -29,7 +28,9 @@ import UIKit
    public var itemForgroundColor:UIColor{
         set{
                 _itemForgroundColor = newValue
-                itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                itemConfig = ["color":itemForgroundColor,
+                              "bgColor":itemBgColor,
+                              "itemCornerRadius":itemCornerRadius]
                 self.reset = true
                 self.collectionView.reloadData()
            
@@ -43,7 +44,9 @@ import UIKit
    public var itemBgColor:UIColor{
         set{
                 _itemBgColor = newValue
-                itemConfig = ["color":itemForgroundColor,"bgColor":itemBgColor]
+                itemConfig = ["color":itemForgroundColor,
+                              "bgColor":itemBgColor,
+                              "itemCornerRadius":itemCornerRadius]
                 self.reset = true
                 self.collectionView.reloadData()
         }
@@ -64,6 +67,22 @@ import UIKit
         }
     }
     
+    var _itemCornerRadius:CGFloat = 0
+    public var itemCornerRadius:CGFloat{
+        set{
+            _itemCornerRadius = newValue
+            itemConfig = ["color":itemForgroundColor,
+                          "bgColor":itemBgColor,
+                          "itemCornerRadius":itemCornerRadius]
+            self.reset = true
+            self.collectionView.reloadData()
+        }
+        
+        get{
+            return _itemCornerRadius
+        }
+    }
+    
     var progress:CGFloat?
     var indexPath:IndexPath?
     var reset:Bool = false
@@ -73,7 +92,7 @@ import UIKit
     
     var itemConfig:NSDictionary
     override public init(frame: CGRect) {
-        itemConfig = ["color":_itemForgroundColor,"bgColor":_itemBgColor]
+        itemConfig = ["color":_itemForgroundColor,"bgColor":_itemBgColor,"itemCornerRadius":_itemCornerRadius]
         super.init(frame: frame)
         self.backgroundColor = .clear
         self.collectionView .reloadData()

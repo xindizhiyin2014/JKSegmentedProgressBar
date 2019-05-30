@@ -27,8 +27,10 @@ class JKSegmentedProgressColletionCell: UICollectionViewCell {
     func updateView(withModel model:NSDictionary) -> Void {
         let bgColor:UIColor = model.object(forKey: "bgColor") as! UIColor
         let color:UIColor = model.object(forKey: "color") as! UIColor
+        let radius:CGFloat = model.object(forKey: "itemCornerRadius") as! CGFloat
         self.contentView.backgroundColor = bgColor;
         self.progressView.backgroundColor = color;
+        self.progressView.layer.cornerRadius = radius
     }
     
     private lazy var progressView:UIView = {
